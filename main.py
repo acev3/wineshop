@@ -18,7 +18,7 @@ template = env.get_template('template.html')
 rendered_page = template.render(
     life_year = str(life_year)
 )
-excel_data_df = pandas.read_excel('wine3.xlsx', usecols=['Категория', 'Название', 'Сорт', 'Цена', 'Картинка', 'Акция'],
+excel_data_df = pandas.read_excel('wine_example.xlsx', usecols=['Категория', 'Название', 'Сорт', 'Цена', 'Картинка', 'Акция'],
                                   na_values='', keep_default_na=False)
 excel_data_df  = excel_data_df.fillna('')
 products_group = collections.defaultdict(list)
