@@ -1,6 +1,5 @@
 env/
 .vscode/
-!.gitignore
+/index.html
 .idea
-..gitignore.swp
-
+*.
