@@ -21,7 +21,7 @@ for element in excel_data_df.to_dict(orient='record'):
     products_group[element['Категория']].append(element)
 
 template = env.get_template('template.html')
-rendered_page = template.render(categories=products_group,
+rendered_page = template.render(drink_categories=products_group,
                                 life_year = str(life_year))
 
 with open('index.html', 'w', encoding="utf8") as file:
